@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+    [role="tab"][aria-selected]::after {
+        content: '\0020⬅';
+        height: 5px;
+    }
+}
+
+section {
+    border: 1px solid black;
+    padding: 5px;
+}

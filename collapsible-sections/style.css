@@ -1,0 +1,23 @@
+button {
+    background: none;
+    border: none;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+button:focus {
+    outline: 2px solid black;
+    outline-offset: 1px;
+}
+
+button[aria-expanded="true"] .vert {
+    display: none;
+}
+
+svg {
+    max-height: 30px;
+}
+

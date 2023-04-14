@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabbed Interfaces</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <ul role="tablist">
+      <li role="presentation">
+        <a role="tab" href="#section1" id="tab1" aria-selected="true">Section 1</a>
+      </li>
+      <li role="presentation">
+        <a role="tab" tabindex="-1" href="#section2" id="tab2">Section 2</a>
+      </li>
+      <li role="presentation">
+          <a role="tab" tabindex="-1" href="#section3" id="tab3">Section 3</a>
+      </li>
+    </ul>
+    <section role="tabpanel" id="section1" aria-labelledby="tab1">  
+      Lorem ipsum dolor sit amet <a href="/#">consectetur</a> adipisicing elit. Maxime earum eaque reiciendis quaerat consequuntur tenetur accusantium voluptatibus harum. Recusandae quisquam dignissimos illum sequi! Debitis <a href="/#">iste</a> commodi repellat eaque. Animi, consectetur!
+    </section>
+    <section role="tabpanel" id="section2" aria-labelledby="tab2" hidden>  
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est libero sunt animi <a href="/#">ratione</a> necessitatibus iure velit rerum porro. Reprehenderit nobis ut molestias! Doloremque, totam illo? Aut ex doloribus tenetur id!
+    </section>
+    <section role="tabpanel" id="section3" aria-labelledby="tab3" hidden>  
+      Lorem ipsum dolor sit, amet consectetur adipisicing <a href="/#">elit</a>. Vel delectus, unde illo debitis, repellendus ad exercitationem ut natus vero ipsum nulla suscipit alias sit veniam fugiat voluptatem. <a href="/#">Harum</a>, voluptatem reiciendis.
+    </section>
+	<script src="main.js"></script>
+  </body>
+</html>

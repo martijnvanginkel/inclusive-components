@@ -1,0 +1,32 @@
+.card-list {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+
+.card {
+    background-color: lightgrey;
+    max-width: 300px;
+}
+
+.text {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.card a:focus {
+    text-decoration: underline;
+}
+
+.card:focus-within {
+    box-shadow: 0 0 0 0.25rem;
+}
+
+.card:focus-within a:focus {
+    text-decoration: none;
+}
